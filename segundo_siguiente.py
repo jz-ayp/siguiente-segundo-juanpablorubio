@@ -1,15 +1,25 @@
 """
-Inserta el encabezado aquí y escribe tu código abajo
+Calcula la hora que seria, después de que pase un segundo.
 """
 
-# Declaraciones
-CONSTANTE = valor
 
 # Entradas
-entrada = input()
+horas = int(input("Horas: "))
+minutos = int(input("Horas: "))
+segundos = int(input("Horas: "))
 
 # Proceso
-
+segundos += 1
+while segundos >= 60:
+    segundos = (segundos-60)
+    minutos += 1
+while minutos >= 60:
+    minutos = (minutos-60)
+    horas += 1
+if horas >=24:
+    horas = (horas-24)
 
 # Salidas
-print(salida)
+print("Horas:", horas)
+print("Minutos:", minutos)
+print("Segundos:", segundos)
