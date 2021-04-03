@@ -1,7 +1,6 @@
 """
-Calcula la hora que seria, después de que pase un segundo.
+Inserta el encabezado aquí y escribe tu código abajo
 """
-
 
 # Entradas
 horas = int(input("Horas: "))
